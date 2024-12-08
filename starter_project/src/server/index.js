@@ -18,16 +18,14 @@ app.use(express.static('src'));
 console.log(__dirname);
 
 // Variables for url and api key
-
+const MEAN_CLOUD_URL = 'https://api.meaningcloud.com/sentiment-2.1?'; 
+const API_KEY = process.env.API_KEY;
 
 app.get('/', (req, res) => {
   // res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
   // res.sendFile('dist/index.html');
     res.sendFile(path.resolve('src/client/views/index.html'))
 });
-
-const MEAN_CLOUD_URL = 'https://api.meaningcloud.com/sentiment-2.1?'; 
-const API_KEY = process.env.API_KEY;
 
 // POST Route
 
