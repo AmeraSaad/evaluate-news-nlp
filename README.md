@@ -3,11 +3,6 @@
 ## Overview
 4th Udacity project in become a React Developer Nanodegree program.
 
-
-## Requirements
-* webpack 4.44.2
-* webpack-cli 3.3.12
-
 ## Steps
 1. Clone the repo
 
