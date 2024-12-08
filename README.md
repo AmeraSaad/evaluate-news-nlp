@@ -12,4 +12,6 @@
 
 4. ``` npm run build-prod ```
 
-6. Open browser at http://localhost:8000/
+7. Open browser at http://localhost:8000/
+8. or
+   ``` npm run build-dev ```
