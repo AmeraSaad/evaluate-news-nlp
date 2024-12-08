@@ -11,8 +11,8 @@ const cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
 
-// app.use(express.static('dist'));
-app.use(express.static('src'));
+app.use(express.static('dist'));
+// app.use(express.static('src'));
 // app.use(express.static(path.resolve(__dirname, 'dist')));
 
 console.log(__dirname);
@@ -22,8 +22,8 @@ const MEAN_CLOUD_URL = 'https://api.meaningcloud.com/sentiment-2.1?';
 const API_KEY = process.env.API_KEY;
 
 app.get('/', (req, res) => {
-  // res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
   // res.sendFile('dist/index.html');
+  // res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     res.sendFile(path.resolve('src/client/views/index.html'))
 });
 
