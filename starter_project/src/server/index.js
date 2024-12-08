@@ -41,7 +41,7 @@ app.post('/api', async (req, res) => {
     }
 
     // 2. Build the API URL
-    const apiUrl = `${BASE_API_URL}?key=${MEAN_CLOUD_API_KEY}&url=${encodeURIComponent(url)}&lang=en`;
+    const apiUrl = `${MEAN_CLOUD_URL}?key=${API_KEY}&url=${encodeURIComponent(url)}&lang=en`;
 
     // 3. Fetch data from the external API
     const apiResponse = await fetch(apiUrl);
