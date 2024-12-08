@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static('dist'));
-// app.use(express.static('src'));
+// app.use(express.static('src/client'));
 // app.use(express.static(path.resolve(__dirname, 'dist')));
 
 console.log(__dirname);
