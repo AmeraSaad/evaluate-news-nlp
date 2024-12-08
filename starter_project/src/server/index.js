@@ -22,9 +22,9 @@ const MEAN_CLOUD_URL = 'https://api.meaningcloud.com/sentiment-2.1?';
 const API_KEY = process.env.API_KEY;
 
 app.get('/', (req, res) => {
-  // res.sendFile('dist/index.html');
+  res.sendFile('dist/index.html');
   // res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-    res.sendFile(path.resolve('src/client/views/index.html'))
+    // res.sendFile(path.resolve('src/client/views/index.html'))
 });
 
 // POST Route
