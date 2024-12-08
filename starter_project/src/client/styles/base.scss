@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif; // Use a clean, modern font
+  background-color: #f9f9f9; // Light background for a modern feel
+  color: #333; // Neutral text color for readability
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 2;
+  padding: 20px; // Add padding around the main content
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff; // White background for sections
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  padding: 20px;
+  border-radius: 8px; // Rounded corners for a polished look
+}

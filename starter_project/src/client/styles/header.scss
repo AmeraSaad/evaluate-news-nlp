@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: center; // Center-align the logo
+  padding: 20px 40px;
+  background-color: #4CAF50; // Add a fresh green color for the header
+  color: #fff; // White text for contrast
+  font-size: 24px; // Increase font size for visibility
+  font-weight: bold;
+}
+
+header div {
+  text-transform: uppercase; // Make the text uppercase for emphasis
+  letter-spacing: 2px; // Add letter spacing for modern style
+}

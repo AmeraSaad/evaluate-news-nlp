@@ -1,0 +1,40 @@
+form {
+  border: 1px solid #ddd; // Subtle border for the form
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe; // Slightly lighter background inside form
+  gap: 15px; // Add space between input and button
+}
+
+input {
+  padding: 12px 15px; // Add more padding for larger input fields
+  width: 100%;
+  line-height: 20px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50; // Highlight the input border on focus
+  outline: none;
+}
+
+button {
+  padding: 12px 15px;
+  background-color: #4CAF50; // Green background for submit button
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; // Darker green on hover
+}
