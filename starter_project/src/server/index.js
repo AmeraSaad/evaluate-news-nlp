@@ -11,8 +11,8 @@ const cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static('dist'));
-// app.use(express.static('src'));
+// app.use(express.static('dist'));
+app.use(express.static('src'));
 // app.use(express.static(path.resolve(__dirname, 'dist')));
 
 console.log(__dirname);
@@ -22,8 +22,8 @@ console.log(__dirname);
 
 app.get('/', (req, res) => {
   // res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-  res.sendFile('dist/index.html');
-    // res.sendFile(path.resolve('src/client/views/index.html'))
+  // res.sendFile('dist/index.html');
+    res.sendFile(path.resolve('src/client/views/index.html'))
 });
 
 const MEAN_CLOUD_URL = 'https://api.meaningcloud.com/sentiment-2.1?'; 
@@ -71,4 +71,6 @@ app.listen(8000, function () {
     console.log('Example app listening on port 8000!');
 });
 
+
+module.exports = { app }
 

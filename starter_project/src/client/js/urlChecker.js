@@ -12,7 +12,5 @@ function checkForUrl(value) {
     );
     return urlPattern.test(value);
 }
-
-
 export { checkForUrl }
 
